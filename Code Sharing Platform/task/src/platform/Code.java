@@ -1,17 +1,32 @@
 package platform;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Code {
-    String code = "public class CodeSharingPlatform {\n" +
-            "    public static void main(String[] args) {\n" +
-            "        SpringApplication.run(CodeSharingPlatform.class, args);\n" +
-            "    }";
+    private String code;
+
+    private static int nextId = 1;
+
     private static final String DATE_FORMATTER= "yyyy/MM/dd HH:mm:ss";
-    private LocalDateTime localDateTime = LocalDateTime.now();
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String id;
+    //private LocalDateTime localDateTime = LocalDateTime.now();
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
-    String date = localDateTime.format(formatter);
+    private String date;
+
+    public Code() {
+    }
+
+    public Code(String code) {
+        this.code = code;
+        this.id = Integer.toString(nextId);
+        nextId++;
+        this.setDate();
+    }
 
     public String getCode() {
         return code;
@@ -26,8 +41,11 @@ public class Code {
     }
 
     public void setDate() {
-        localDateTime = LocalDateTime.now();
-        this.date = localDateTime.format(formatter);
+        this.date = LocalDateTime.now().format(formatter);
+    }
+
+    public String getId() {
+        return id;
     }
 
     @Override

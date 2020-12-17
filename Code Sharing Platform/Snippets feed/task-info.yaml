@@ -413,6 +413,164 @@ files:
         }
     }
   learner_created: false
+- name: src/resources/templates/answer.html
+  visible: true
+  text: |-
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>Code</title>
+    </head>
+    <body>
+    <span id="load_date" th:text="${code.date}">date</span>
+    <pre id="code_snippet" th:text="${code.code}">code</pre>
+    </body>
+    </html>
+  learner_created: true
+- name: src/platform/CodeController.java
+  visible: true
+  text: |
+    package platform;
+
+    import org.springframework.http.HttpHeaders;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.stereotype.Controller;
+    import org.springframework.ui.ModelMap;
+    import org.springframework.web.bind.annotation.*;
+    import javax.servlet.http.HttpServletResponse;
+    import java.io.IOException;
+
+    @Controller
+    public class CodeController {
+        Code code = new Code();
+    /*
+        @ModelAttribute("code")
+        public Code newCode() {
+            return code;
+        }
+    */
+        @GetMapping("/code")
+        public String getHtml(ModelMap model, HttpServletResponse response) {
+            model.addAttribute("code",code);
+            response.addHeader("Content-Type", "text/html");
+            return "answer";
+        }
+
+        @GetMapping("/code/new")
+        public String addCode() {
+            return "addCode";
+        }
+
+        @GetMapping("/api/code")
+        @ResponseBody
+        public ResponseEntity<Object> getJson() {
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set("Content-Type",
+                    "application/json");
+            return ResponseEntity.ok()
+                    .headers(responseHeaders)
+                    .body(code);
+        }
+
+        @PostMapping("/api/code/new")
+        @ResponseBody
+        public ResponseEntity<Object> postCode(@RequestBody Code newCode) throws IOException {
+            newCode.setDate();
+            code = newCode;
+            return new ResponseEntity<>("{}", HttpStatus.OK);
+        }
+
+    }
+  learner_created: true
+- name: src/platform/Code.java
+  visible: true
+  text: |
+    package platform;
+
+    import java.time.LocalDateTime;
+    import java.time.format.DateTimeFormatter;
+
+    public class Code {
+        String code = "public class CodeSharingPlatform {\n" +
+                "    public static void main(String[] args) {\n" +
+                "        SpringApplication.run(CodeSharingPlatform.class, args);\n" +
+                "    }";
+        private static final String DATE_FORMATTER= "yyyy/MM/dd HH:mm:ss";
+        private LocalDateTime localDateTime = LocalDateTime.now();
+        private DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
+        String date = localDateTime.format(formatter);
+
+        public String getCode() {
+            return code;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public String getDate() {
+            return date;
+        }
+
+        public void setDate() {
+            localDateTime = LocalDateTime.now();
+            this.date = localDateTime.format(formatter);
+        }
+
+        @Override
+        public String toString() {
+            return code;
+        }
+    }
+  learner_created: true
+- name: src/resources/templates/addCode.html
+  visible: true
+  text: |-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create</title>
+    </head>
+    <body>
+    <form>
+        <textarea id="code_snippet">  </textarea>
+        <button id="send_snippet" type="submit" onclick="send()">Submit</button>
+    </form>
+    <script>
+      function send() {
+        let object = {
+            "code": document.getElementById("code_snippet").value
+        };
+
+        let json = JSON.stringify(object);
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", '/api/code/new', false)
+        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+        xhr.send(json);
+
+        if (xhr.status == 200) {
+          alert("Success!");
+        }
+    }
+    </script>
+
+    </body>
+    </html>
+  learner_created: true
+- name: src/platform/Id.java
+  visible: true
+  learner_created: true
+- name: src/resources/templates/latest.html
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/130/stages/694/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 17 Dec 2020 13:38:33 UTC
 record: -1

@@ -326,12 +326,9 @@ files:
 - name: src/resources/templates/addCode.html
   visible: true
   learner_created: true
-- name: src/platform/Empty.java
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/projects/130/stages/693/implement#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: Thu, 17 Dec 2020 06:59:18 UTC
-record: -1
+record: 2
