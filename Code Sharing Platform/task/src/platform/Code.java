@@ -2,29 +2,28 @@ package platform;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.*;
+import javax.persistence.GenerationType;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+@Entity(name = "code")
 public class Code {
+    @Column
     private String code;
-
-    private static int nextId = 1;
-
-    private static final String DATE_FORMATTER= "yyyy/MM/dd HH:mm:ss";
-
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private String id;
-    //private LocalDateTime localDateTime = LocalDateTime.now();
-    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMATTER);
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    private int id;
+    @Column
     private String date;
+
 
     public Code() {
     }
 
     public Code(String code) {
         this.code = code;
-        this.id = Integer.toString(nextId);
-        nextId++;
         this.setDate();
     }
 
@@ -41,10 +40,11 @@ public class Code {
     }
 
     public void setDate() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         this.date = LocalDateTime.now().format(formatter);
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 

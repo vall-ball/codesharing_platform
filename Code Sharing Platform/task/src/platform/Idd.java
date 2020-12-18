@@ -1,9 +1,9 @@
 package platform;
 
-public class Id {
+public class Idd {
     String id;
 
-    public Id(String id) {
+    public Idd(String id) {
         this.id = id;
     }
 

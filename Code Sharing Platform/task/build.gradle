@@ -19,4 +19,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.thymeleaf:thymeleaf-spring5")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    runtimeOnly 'com.h2database:h2'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }

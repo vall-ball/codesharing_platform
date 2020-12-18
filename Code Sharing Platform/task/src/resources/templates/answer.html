@@ -1,12 +1,17 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <meta charset="utf-8">
     <title>Code</title>
 </head>
 <body>
 <span id="load_date" th:text="${code.date}">date</span>
-<pre id="code_snippet" th:text="${code.code}">code</pre>
+<pre id="code_snippet"><code th:text="${code.code}">code</code></pre>
 </body>
 </html>
