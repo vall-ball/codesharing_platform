@@ -18,15 +18,15 @@ public class CodeService {
     }
 
     public List<Code> list() {
-        return (List<Code>) codeRepository.findAll();
+        return (List<Code>) codeRepository.findByIsSecretViewsFalseAndIsSecretTimeFalse();
     }
 
-    public void delete(Integer id) {
+    public void delete(String id) {
         codeRepository.deleteById(id);
 
     }
 
-    public Code findCodeById(Integer id) {
+    public Code findCodeById(String id) {
         return codeRepository.findById(id).get();
     }
 }

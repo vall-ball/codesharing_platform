@@ -1,11 +1,11 @@
-platform/CodeSharingPlatform.java
- platform.CodeSharingPlatform
 platform/CodeService.java
  platform.CodeService
 platform/CodeRepository.java
  platform.CodeRepository
 platform/Code.java
  platform.Code
+platform/CodeSharingPlatform.java
+ platform.CodeSharingPlatform
 platform/Idd.java
  platform.Idd
 platform/CodeController.java

@@ -631,6 +631,311 @@ files:
         }
     }
   learner_created: false
+- name: src/platform/CodeRepository.java
+  visible: true
+  text: |
+    package platform;
+
+    import org.springframework.data.jpa.repository.JpaRepository;
+
+    public interface CodeRepository extends JpaRepository<Code, Integer> {
+    }
+  learner_created: true
+- name: src/resources/templates/answer.html
+  visible: true
+  text: |2-
+
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link rel="stylesheet"
+              href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <meta charset="utf-8">
+        <title>Code</title>
+    </head>
+    <body>
+    <span id="load_date" th:text="${code.date}">date</span>
+    <pre id="code_snippet"><code th:text="${code.code}">code</code></pre>
+    </body>
+    </html>
+  learner_created: true
+- name: src/platform/CodeController.java
+  visible: true
+  text: |
+    package platform;
+
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.http.HttpHeaders;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.stereotype.Controller;
+    import org.springframework.ui.ModelMap;
+    import org.springframework.web.bind.annotation.*;
+    import javax.servlet.http.HttpServletResponse;
+    import java.io.IOException;
+    import java.util.ArrayList;
+    import java.util.List;
+
+    @Controller
+    public class CodeController {
+        @Autowired
+        public CodeService codeService;
+
+        @GetMapping("/code/{id}")
+        public String getHtml(ModelMap model, HttpServletResponse response, @PathVariable(value = "id") int id) {
+            Code code = codeService.findCodeById(id);
+            model.addAttribute("code", code);
+            response.addHeader("Content-Type", "text/html");
+            return "answer";
+        }
+
+        @GetMapping("/code/new")
+        public String addCode() {
+            return "addCode";
+        }
+
+        @GetMapping("/api/code/{id}")
+        @ResponseBody
+        public ResponseEntity<Object> getJson(@PathVariable(value = "id") int id) {
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set("Content-Type",
+                    "application/json");
+            try {
+                Code code = codeService.findCodeById(id);
+                return ResponseEntity.ok()
+                        .headers(responseHeaders)
+                        .body(code);
+            } catch (Exception e) {
+                return new ResponseEntity<>("404 (Not found)", HttpStatus.NOT_FOUND);
+            }
+        }
+
+        @PostMapping("/api/code/new")
+        @ResponseBody
+        public ResponseEntity<Object> postCode(@RequestBody Code newCode) throws IOException {
+            Code code = new Code(newCode.getCode());
+            codeService.save(code);
+            return new ResponseEntity<>(new Idd(Integer.toString(code.getId())), HttpStatus.OK);
+        }
+
+        @GetMapping("/api/code/latest")
+        @ResponseBody
+        public ResponseEntity<Object> getLatestJson() {
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set("Content-Type",
+                    "application/json");
+            return ResponseEntity.ok()
+                    .headers(responseHeaders)
+                    .body(latest());
+        }
+
+        @GetMapping("/code/latest")
+        public String getLatest(ModelMap model, HttpServletResponse response) {
+            model.addAttribute("codes", latest());
+            response.addHeader("Content-Type", "text/html");
+            return "latest";
+        }
+
+        public List<Code> latest() {
+            int i = 1;
+            List<Code> codes = new ArrayList<>();
+            List<Code> temp = codeService.list();
+            while (i != 11 && i <= temp.size()) {
+                codes.add(temp.get(temp.size() - i));
+                i++;
+            }
+            return codes;
+        }
+
+    }
+  learner_created: true
+- name: src/platform/Idd.java
+  visible: true
+  text: |
+    package platform;
+
+    public class Idd {
+        String id;
+
+        public Idd(String id) {
+            this.id = id;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+
+    }
+  learner_created: true
+- name: src/platform/CodeService.java
+  visible: true
+  text: |
+    package platform;
+
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.stereotype.Service;
+
+    import javax.transaction.Transactional;
+    import java.util.List;
+
+    @Service
+    @Transactional
+    public class CodeService {
+        @Autowired
+        CodeRepository codeRepository;
+
+        public void save(Code code) {
+            codeRepository.save(code);
+
+        }
+
+        public List<Code> list() {
+            return (List<Code>) codeRepository.findAll();
+        }
+
+        public void delete(Integer id) {
+            codeRepository.deleteById(id);
+
+        }
+
+        public Code findCodeById(Integer id) {
+            return codeRepository.findById(id).get();
+        }
+    }
+  learner_created: true
+- name: src/resources/templates/latest.html
+  visible: true
+  text: |2-
+
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link rel="stylesheet"
+              href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <meta charset="utf-8">
+        <title>Latest</title>
+    </head>
+    <body>
+    <div th:each="code : ${codes}">
+        <span id="load_date" th:text="${code.date}">date</span>
+        <pre id="code_snippet"><code th:text="${code.code}">code</code></pre>
+    </div>
+
+    </body>
+    </html>
+  learner_created: true
+- name: src/platform/Code.java
+  visible: true
+  text: |
+    package platform;
+
+    import com.fasterxml.jackson.annotation.JsonProperty;
+
+    import javax.persistence.*;
+    import javax.persistence.GenerationType;
+    import java.time.LocalDateTime;
+    import java.time.format.DateTimeFormatter;
+
+    @Entity(name = "code")
+    public class Code {
+        @Column
+        private String code;
+        @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        @Id
+        private int id;
+        @Column
+        private String date;
+
+
+        public Code() {
+        }
+
+        public Code(String code) {
+            this.code = code;
+            this.setDate();
+        }
+
+        public String getCode() {
+            return code;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public String getDate() {
+            return date;
+        }
+
+        public void setDate() {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+            this.date = LocalDateTime.now().format(formatter);
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        @Override
+        public String toString() {
+            return code;
+        }
+    }
+  learner_created: true
+- name: src/resources/templates/addCode.html
+  visible: true
+  text: |-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create</title>
+    </head>
+    <body>
+    <form>
+        <textarea id="code_snippet">  </textarea>
+        <button id="send_snippet" type="submit" onclick="send()">Submit</button>
+    </form>
+    <script>
+      function send() {
+        let object = {
+            "code": document.getElementById("code_snippet").value
+        };
+
+        let json = JSON.stringify(object);
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", '/api/code/new', false)
+        xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+        xhr.send(json);
+
+        if (xhr.status == 200) {
+          alert("Success!");
+        }
+    }
+    </script>
+
+    </body>
+    </html>
+  learner_created: true
+- name: src/resources/templates/error.html
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/130/stages/696/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 18 Dec 2020 08:58:02 UTC
 record: -1

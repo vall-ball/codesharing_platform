@@ -9,40 +9,43 @@
 * =========|_|==============|___/=/_/_/_/
 , :: Spring Boot ::        (v2.3.3.RELEASE)
 
-Î2020-12-18 12:35:59.441  INFO 4440 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on nec with PID 4440 (started by Lena in D:\programming\Code Sharing Platform\Code Sharing Platform\task)
-•2020-12-18 12:35:59.444  INFO 4440 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
-°2020-12-18 12:36:00.643  INFO 4440 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-π2020-12-18 12:36:00.721  INFO 4440 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 1 JPA repository interfaces.
-ë2020-12-18 12:36:01.425  INFO 4440 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
-~2020-12-18 12:36:01.439  INFO 4440 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-î2020-12-18 12:36:01.441  INFO 4440 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-ó2020-12-18 12:36:01.609  INFO 4440 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-§2020-12-18 12:36:01.610  INFO 4440 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2108 ms
-2020-12-18 12:36:01.782  INFO 4440 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-Ñ2020-12-18 12:36:02.045  INFO 4440 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-º2020-12-18 12:36:02.055  INFO 4440 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
-õ2020-12-18 12:36:02.302  INFO 4440 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-û2020-12-18 12:36:02.371  INFO 4440 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-ú2020-12-18 12:36:02.458  WARN 4440 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-ó2020-12-18 12:36:02.488  INFO 4440 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
-ù2020-12-18 12:36:02.757  INFO 4440 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-û2020-12-18 12:36:02.948  INFO 4440 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-ÿ2020-12-18 12:36:04.115  INFO 4440 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-®2020-12-18 12:36:04.130  INFO 4440 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-ö2020-12-18 12:36:04.247  INFO 4440 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-†2020-12-18 12:36:04.314  INFO 4440 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
-¶2020-12-18 12:36:04.315  INFO 4440 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
-ä2020-12-18 12:36:04.605  INFO 4440 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-®2020-12-18 12:36:04.619  INFO 4440 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 5.692 seconds (JVM running for 6.81)
-û2020-12-18 12:36:05.074  INFO 4440 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-ç2020-12-18 12:36:05.082  INFO 4440 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ü2020-12-18 12:36:05.101  INFO 4440 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+Ì2020-12-18 15:57:45.454  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on nec with PID 11888 (started by Lena in D:\programming\Code Sharing Platform\Code Sharing Platform\task)
+¶2020-12-18 15:57:45.457  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+¢2020-12-18 15:57:46.621  INFO 11888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+∫2020-12-18 15:57:46.691  INFO 11888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 1 JPA repository interfaces.
+í2020-12-18 15:57:47.392  INFO 11888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-18 15:57:47.407  INFO 11888 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-12-18 15:57:47.408  INFO 11888 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+ò2020-12-18 15:57:47.594  INFO 11888 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2020-12-18 15:57:47.594  INFO 11888 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2074 ms
+Ä2020-12-18 15:57:47.781  INFO 11888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2020-12-18 15:57:48.045  INFO 11888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+Ω2020-12-18 15:57:48.064  INFO 11888 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
+ú2020-12-18 15:57:48.325  INFO 11888 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ü2020-12-18 15:57:48.418  INFO 11888 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ù2020-12-18 15:57:48.494  WARN 11888 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ò2020-12-18 15:57:48.514  INFO 11888 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+û2020-12-18 15:57:48.764  INFO 11888 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ü2020-12-18 15:57:48.955  INFO 11888 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Ÿ2020-12-18 15:57:49.929  INFO 11888 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2020-12-18 15:57:49.942  INFO 11888 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+õ2020-12-18 15:57:50.053  INFO 11888 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-12-18 15:57:50.129  INFO 11888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+ß2020-12-18 15:57:50.130  INFO 11888 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+ã2020-12-18 15:57:50.503  INFO 11888 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+©2020-12-18 15:57:50.518  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 5.59 seconds (JVM running for 6.679)
+ü2020-12-18 15:57:50.945  INFO 11888 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-12-18 15:57:50.945  INFO 11888 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+á2020-12-18 15:57:50.957  INFO 11888 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
 [1;31m
 Start test 2[0m
 [1;31m
 Start test 3[0m
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 4[0m
+false
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 5[0m
 [1;31m
@@ -51,12 +54,18 @@
 Start test 7[0m
 [1;31m
 Start test 8[0m
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 9[0m
+false
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 10[0m
+‚Code{code='class Code { ...', id='d6d5b121-b7e2-4dca-9e34-992118441926', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.002743, end=2020-12-18T15:57:52.002743}
 [1;31m
 Start test 11[0m
+false
+‚Code{code='class Code { ...', id='d6d5b121-b7e2-4dca-9e34-992118441926', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.002743, end=2020-12-18T15:57:52.002743}
 [1;31m
 Start test 12[0m
 [1;31m
@@ -87,70 +96,112 @@
 Start test 25[0m
 [1;31m
 Start test 26[0m
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 27[0m
+false
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 28[0m
+‚Code{code='class Code { ...', id='d6d5b121-b7e2-4dca-9e34-992118441926', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.002743, end=2020-12-18T15:57:52.002743}
 [1;31m
 Start test 29[0m
+false
+‚Code{code='class Code { ...', id='d6d5b121-b7e2-4dca-9e34-992118441926', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.002743, end=2020-12-18T15:57:52.002743}
 [1;31m
 Start test 30[0m
+‹Code{code='Snippet #3', id='72f24a7a-1d09-4b45-bdf1-9b5241faa517', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.082764, end=2020-12-18T15:57:52.082764}
 [1;31m
 Start test 31[0m
+false
+‹Code{code='Snippet #3', id='72f24a7a-1d09-4b45-bdf1-9b5241faa517', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.082764, end=2020-12-18T15:57:52.082764}
 [1;31m
 Start test 32[0m
+‹Code{code='Snippet #4', id='8df95007-00c0-48ce-8b7f-06ef2852cb0c', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.091766, end=2020-12-18T15:57:52.091766}
 [1;31m
 Start test 33[0m
+false
+‹Code{code='Snippet #4', id='8df95007-00c0-48ce-8b7f-06ef2852cb0c', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.091766, end=2020-12-18T15:57:52.091766}
 [1;31m
 Start test 34[0m
+‹Code{code='Snippet #5', id='d68f858f-c696-4f5a-9542-822fb3c34cc0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.102769, end=2020-12-18T15:57:52.102769}
 [1;31m
 Start test 35[0m
+false
+‹Code{code='Snippet #5', id='d68f858f-c696-4f5a-9542-822fb3c34cc0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.102769, end=2020-12-18T15:57:52.102769}
 [1;31m
 Start test 36[0m
+‹Code{code='Snippet #6', id='e3f9de13-7296-4897-a92e-4190acb620f5', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.111771, end=2020-12-18T15:57:52.111771}
 [1;31m
 Start test 37[0m
+false
+‹Code{code='Snippet #6', id='e3f9de13-7296-4897-a92e-4190acb620f5', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.111771, end=2020-12-18T15:57:52.111771}
 [1;31m
 Start test 38[0m
+‹Code{code='Snippet #7', id='516378b1-3afa-44d2-ae2c-217e12a7da9b', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.118772, end=2020-12-18T15:57:52.118772}
 [1;31m
 Start test 39[0m
+false
+‹Code{code='Snippet #7', id='516378b1-3afa-44d2-ae2c-217e12a7da9b', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.118772, end=2020-12-18T15:57:52.118772}
 [1;31m
 Start test 40[0m
+‹Code{code='Snippet #8', id='089d212a-0754-43d5-aa4a-d37f0d68fe3d', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.127775, end=2020-12-18T15:57:52.127775}
 [1;31m
 Start test 41[0m
+false
+‹Code{code='Snippet #8', id='089d212a-0754-43d5-aa4a-d37f0d68fe3d', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.127775, end=2020-12-18T15:57:52.127775}
 [1;31m
 Start test 42[0m
+‹Code{code='Snippet #9', id='77242197-62b2-47bb-a564-37cc114361c0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.136778, end=2020-12-18T15:57:52.136778}
 [1;31m
 Start test 43[0m
+false
+‹Code{code='Snippet #9', id='77242197-62b2-47bb-a564-37cc114361c0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.136778, end=2020-12-18T15:57:52.136778}
 [1;31m
 Start test 44[0m
+›Code{code='Snippet #10', id='1237f415-e41d-4b1e-a130-5d8f9223423f', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.145780, end=2020-12-18T15:57:52.145780}
 [1;31m
 Start test 45[0m
+false
+›Code{code='Snippet #10', id='1237f415-e41d-4b1e-a130-5d8f9223423f', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.145780, end=2020-12-18T15:57:52.145780}
 [1;31m
 Start test 46[0m
+›Code{code='Snippet #11', id='5cc730cd-61af-4eae-bab0-e84f66e24c2e', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.155782, end=2020-12-18T15:57:52.155782}
 [1;31m
 Start test 47[0m
+false
+›Code{code='Snippet #11', id='5cc730cd-61af-4eae-bab0-e84f66e24c2e', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.155782, end=2020-12-18T15:57:52.155782}
 [1;31m
 Start test 48[0m
+›Code{code='Snippet #12', id='baee80fa-2bc9-45e4-b5c8-0841b800fed6', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.164785, end=2020-12-18T15:57:52.164785}
 [1;31m
 Start test 49[0m
+false
+›Code{code='Snippet #12', id='baee80fa-2bc9-45e4-b5c8-0841b800fed6', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.164785, end=2020-12-18T15:57:52.164785}
 [1;31m
 Start test 50[0m
+›Code{code='Snippet #13', id='66e56786-d43f-4bf1-aa38-f5237aa9e508', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.173787, end=2020-12-18T15:57:52.173787}
 [1;31m
 Start test 51[0m
+false
+›Code{code='Snippet #13', id='66e56786-d43f-4bf1-aa38-f5237aa9e508', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.173787, end=2020-12-18T15:57:52.173787}
 [1;31m
 Start test 52[0m
+›Code{code='Snippet #14', id='466620ba-11db-477d-8e07-55aa761fb507', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.181789, end=2020-12-18T15:57:52.181789}
 [1;31m
 Start test 53[0m
+false
+›Code{code='Snippet #14', id='466620ba-11db-477d-8e07-55aa761fb507', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.181789, end=2020-12-18T15:57:52.181789}
 [1;31m
 Start test 54[0m
 [1;31m
 Start test 55[0m
 [1;31m
 Start test 56[0m
-§2020-12-18 12:36:07.264  INFO 4440 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-ú2020-12-18 12:36:07.266  INFO 4440 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-â2020-12-18 12:36:07.267  INFO 4440 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-á2020-12-18 12:36:07.479  INFO 4440 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+•2020-12-18 15:57:53.166  INFO 11888 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+ù2020-12-18 15:57:53.167  INFO 11888 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+ä2020-12-18 15:57:53.169  INFO 11888 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+à2020-12-18 15:57:53.451  INFO 11888 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 
 )  .   ____          _            __ _ _
 * /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -160,89 +211,275 @@
 * =========|_|==============|___/=/_/_/_/
 , :: Spring Boot ::        (v2.3.3.RELEASE)
 
-Î2020-12-18 12:36:07.559  INFO 4440 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on nec with PID 4440 (started by Lena in D:\programming\Code Sharing Platform\Code Sharing Platform\task)
-•2020-12-18 12:36:07.560  INFO 4440 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
-°2020-12-18 12:36:07.908  INFO 4440 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-∏2020-12-18 12:36:07.916  INFO 4440 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
-ë2020-12-18 12:36:08.014  INFO 4440 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
-~2020-12-18 12:36:08.014  INFO 4440 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-î2020-12-18 12:36:08.015  INFO 4440 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-ó2020-12-18 12:36:08.057  INFO 4440 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-£2020-12-18 12:36:08.057  INFO 4440 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 493 ms
-2020-12-18 12:36:08.144  INFO 4440 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-Ñ2020-12-18 12:36:08.158  INFO 4440 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-º2020-12-18 12:36:08.159  INFO 4440 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
-õ2020-12-18 12:36:08.206  INFO 4440 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-û2020-12-18 12:36:08.211  INFO 4440 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-û2020-12-18 12:36:08.223  INFO 4440 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-ú2020-12-18 12:36:08.247  WARN 4440 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-ÿ2020-12-18 12:36:08.288  INFO 4440 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-®2020-12-18 12:36:08.289  INFO 4440 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-ö2020-12-18 12:36:08.589  INFO 4440 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-†2020-12-18 12:36:08.605  INFO 4440 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
-¶2020-12-18 12:36:08.605  INFO 4440 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
-ä2020-12-18 12:36:08.635  INFO 4440 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-™2020-12-18 12:36:08.640  INFO 4440 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 1.112 seconds (JVM running for 10.832)
+Ì2020-12-18 15:57:53.530  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on nec with PID 11888 (started by Lena in D:\programming\Code Sharing Platform\Code Sharing Platform\task)
+¶2020-12-18 15:57:53.531  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+¢2020-12-18 15:57:53.818  INFO 11888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+π2020-12-18 15:57:53.825  INFO 11888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
+í2020-12-18 15:57:53.928  INFO 11888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-18 15:57:53.930  INFO 11888 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-12-18 15:57:53.931  INFO 11888 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+ò2020-12-18 15:57:53.971  INFO 11888 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+§2020-12-18 15:57:53.971  INFO 11888 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 436 ms
+Ä2020-12-18 15:57:54.020  INFO 11888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+Ö2020-12-18 15:57:54.031  INFO 11888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+Ω2020-12-18 15:57:54.032  INFO 11888 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
+ú2020-12-18 15:57:54.082  INFO 11888 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ü2020-12-18 15:57:54.091  INFO 11888 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ü2020-12-18 15:57:54.110  INFO 11888 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+ù2020-12-18 15:57:54.115  WARN 11888 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Ÿ2020-12-18 15:57:54.223  INFO 11888 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2020-12-18 15:57:54.224  INFO 11888 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+õ2020-12-18 15:57:54.359  INFO 11888 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-12-18 15:57:54.374  INFO 11888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+ß2020-12-18 15:57:54.374  INFO 11888 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+ã2020-12-18 15:57:54.437  INFO 11888 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+´2020-12-18 15:57:54.437  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 0.964 seconds (JVM running for 10.613)
 [1;31m
 Start test 57[0m
-û2020-12-18 12:36:08.647  INFO 4440 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-ç2020-12-18 12:36:08.647  INFO 4440 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ö2020-12-18 12:36:08.651  INFO 4440 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+ü2020-12-18 15:57:54.452  INFO 11888 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-12-18 15:57:54.452  INFO 11888 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2020-12-18 15:57:54.452  INFO 11888 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 58[0m
+false
+ËCode{code='public static void ...', id='fa14cab4-5510-475e-bbbc-b8778109ea55', date='2020/12/18 15:57:51', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:51.406587, end=2020-12-18T15:57:51.406587}
 [1;31m
 Start test 59[0m
+‚Code{code='class Code { ...', id='d6d5b121-b7e2-4dca-9e34-992118441926', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.002743, end=2020-12-18T15:57:52.002743}
 [1;31m
 Start test 60[0m
+false
+‚Code{code='class Code { ...', id='d6d5b121-b7e2-4dca-9e34-992118441926', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.002743, end=2020-12-18T15:57:52.002743}
 [1;31m
 Start test 61[0m
+‹Code{code='Snippet #3', id='72f24a7a-1d09-4b45-bdf1-9b5241faa517', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.082764, end=2020-12-18T15:57:52.082764}
 [1;31m
 Start test 62[0m
+false
+‹Code{code='Snippet #3', id='72f24a7a-1d09-4b45-bdf1-9b5241faa517', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.082764, end=2020-12-18T15:57:52.082764}
 [1;31m
 Start test 63[0m
+‹Code{code='Snippet #4', id='8df95007-00c0-48ce-8b7f-06ef2852cb0c', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.091766, end=2020-12-18T15:57:52.091766}
 [1;31m
 Start test 64[0m
+false
+‹Code{code='Snippet #4', id='8df95007-00c0-48ce-8b7f-06ef2852cb0c', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.091766, end=2020-12-18T15:57:52.091766}
 [1;31m
 Start test 65[0m
+‹Code{code='Snippet #5', id='d68f858f-c696-4f5a-9542-822fb3c34cc0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.102769, end=2020-12-18T15:57:52.102769}
 [1;31m
 Start test 66[0m
+false
+‹Code{code='Snippet #5', id='d68f858f-c696-4f5a-9542-822fb3c34cc0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.102769, end=2020-12-18T15:57:52.102769}
 [1;31m
 Start test 67[0m
+‹Code{code='Snippet #6', id='e3f9de13-7296-4897-a92e-4190acb620f5', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.111771, end=2020-12-18T15:57:52.111771}
 [1;31m
 Start test 68[0m
+false
+‹Code{code='Snippet #6', id='e3f9de13-7296-4897-a92e-4190acb620f5', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.111771, end=2020-12-18T15:57:52.111771}
 [1;31m
 Start test 69[0m
+‹Code{code='Snippet #7', id='516378b1-3afa-44d2-ae2c-217e12a7da9b', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.118772, end=2020-12-18T15:57:52.118772}
 [1;31m
 Start test 70[0m
+false
+‹Code{code='Snippet #7', id='516378b1-3afa-44d2-ae2c-217e12a7da9b', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.118772, end=2020-12-18T15:57:52.118772}
 [1;31m
 Start test 71[0m
+‹Code{code='Snippet #8', id='089d212a-0754-43d5-aa4a-d37f0d68fe3d', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.127775, end=2020-12-18T15:57:52.127775}
 [1;31m
 Start test 72[0m
+false
+‹Code{code='Snippet #8', id='089d212a-0754-43d5-aa4a-d37f0d68fe3d', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.127775, end=2020-12-18T15:57:52.127775}
 [1;31m
 Start test 73[0m
+‹Code{code='Snippet #9', id='77242197-62b2-47bb-a564-37cc114361c0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.136778, end=2020-12-18T15:57:52.136778}
 [1;31m
 Start test 74[0m
+false
+‹Code{code='Snippet #9', id='77242197-62b2-47bb-a564-37cc114361c0', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.136778, end=2020-12-18T15:57:52.136778}
 [1;31m
 Start test 75[0m
+›Code{code='Snippet #10', id='1237f415-e41d-4b1e-a130-5d8f9223423f', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.145780, end=2020-12-18T15:57:52.145780}
 [1;31m
 Start test 76[0m
+false
+›Code{code='Snippet #10', id='1237f415-e41d-4b1e-a130-5d8f9223423f', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.145780, end=2020-12-18T15:57:52.145780}
 [1;31m
 Start test 77[0m
+›Code{code='Snippet #11', id='5cc730cd-61af-4eae-bab0-e84f66e24c2e', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.155782, end=2020-12-18T15:57:52.155782}
 [1;31m
 Start test 78[0m
+false
+›Code{code='Snippet #11', id='5cc730cd-61af-4eae-bab0-e84f66e24c2e', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.155782, end=2020-12-18T15:57:52.155782}
 [1;31m
 Start test 79[0m
+›Code{code='Snippet #12', id='baee80fa-2bc9-45e4-b5c8-0841b800fed6', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.164785, end=2020-12-18T15:57:52.164785}
 [1;31m
 Start test 80[0m
+false
+›Code{code='Snippet #12', id='baee80fa-2bc9-45e4-b5c8-0841b800fed6', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.164785, end=2020-12-18T15:57:52.164785}
 [1;31m
 Start test 81[0m
+›Code{code='Snippet #13', id='66e56786-d43f-4bf1-aa38-f5237aa9e508', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.173787, end=2020-12-18T15:57:52.173787}
 [1;31m
 Start test 82[0m
+false
+›Code{code='Snippet #13', id='66e56786-d43f-4bf1-aa38-f5237aa9e508', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.173787, end=2020-12-18T15:57:52.173787}
 [1;31m
 Start test 83[0m
+›Code{code='Snippet #14', id='466620ba-11db-477d-8e07-55aa761fb507', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.181789, end=2020-12-18T15:57:52.181789}
 [1;31m
 Start test 84[0m
+false
+›Code{code='Snippet #14', id='466620ba-11db-477d-8e07-55aa761fb507', date='2020/12/18 15:57:52', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:52.181789, end=2020-12-18T15:57:52.181789}
 [1;31m
 Start test 85[0m
 [1;31m
 Start test 86[0m
+[1;31m
+Start test 87[0m
+[1;31m
+Start test 88[0m
+[1;31m
+Start test 89[0m
+[1;31m
+Start test 90[0m
+[1;31m
+Start test 91[0m
+[1;31m
+Start test 92[0m
+[1;31m
+Start test 93[0m
+[1;31m
+Start test 94[0m
+[1;31m
+Start test 95[0m
+›Code{code='Snippet #15', id='1ec6b396-09b5-4f17-bff0-3091bf960b6a', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.734157, end=2020-12-18T15:57:54.734157}
+[1;31m
+Start test 96[0m
+false
+›Code{code='Snippet #15', id='1ec6b396-09b5-4f17-bff0-3091bf960b6a', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.734157, end=2020-12-18T15:57:54.734157}
+[1;31m
+Start test 97[0m
+›Code{code='Snippet #17', id='bece6d41-88c0-4735-9147-91d8ce0506dc', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.749782, end=2020-12-18T15:57:54.749782}
+[1;31m
+Start test 98[0m
+false
+›Code{code='Snippet #17', id='bece6d41-88c0-4735-9147-91d8ce0506dc', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.749782, end=2020-12-18T15:57:54.749782}
+[1;31m
+Start test 99[0m
+›Code{code='Snippet #19', id='9b780232-1989-44bb-a150-e4562a49df99', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+[1;31m
+Start test 100[0m
+false
+›Code{code='Snippet #19', id='9b780232-1989-44bb-a150-e4562a49df99', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+[1;31m
+Start test 101[0m
+›Code{code='Snippet #21', id='e1d3bd1c-d0fd-42eb-aa4f-44495031bc25', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.796657, end=2020-12-18T15:57:54.796657}
+[1;31m
+Start test 102[0m
+false
+›Code{code='Snippet #21', id='e1d3bd1c-d0fd-42eb-aa4f-44495031bc25', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=false, begin=2020-12-18T15:57:54.796657, end=2020-12-18T15:57:54.796657}
+[1;31m
+Start test 103[0m
+•2020-12-18 15:58:00.425  INFO 11888 --- [       Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+ù2020-12-18 15:58:00.425  INFO 11888 --- [       Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+ä2020-12-18 15:58:00.425  INFO 11888 --- [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+à2020-12-18 15:58:00.675  INFO 11888 --- [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::        (v2.3.3.RELEASE)
+
+Ì2020-12-18 15:58:00.722  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on nec with PID 11888 (started by Lena in D:\programming\Code Sharing Platform\Code Sharing Platform\task)
+¶2020-12-18 15:58:00.722  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+¢2020-12-18 15:58:00.968  INFO 11888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+π2020-12-18 15:58:00.968  INFO 11888 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
+í2020-12-18 15:58:01.047  INFO 11888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-18 15:58:01.047  INFO 11888 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2020-12-18 15:58:01.062  INFO 11888 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+ò2020-12-18 15:58:01.093  INFO 11888 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+§2020-12-18 15:58:01.093  INFO 11888 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 371 ms
+Ä2020-12-18 15:58:01.140  INFO 11888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+Ö2020-12-18 15:58:01.156  INFO 11888 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+Ω2020-12-18 15:58:01.156  INFO 11888 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
+ú2020-12-18 15:58:01.203  INFO 11888 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ü2020-12-18 15:58:01.218  INFO 11888 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ü2020-12-18 15:58:01.234  INFO 11888 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+ù2020-12-18 15:58:01.234  WARN 11888 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Ÿ2020-12-18 15:58:01.297  INFO 11888 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2020-12-18 15:58:01.297  INFO 11888 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+õ2020-12-18 15:58:01.418  INFO 11888 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2020-12-18 15:58:01.434  INFO 11888 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+ß2020-12-18 15:58:01.450  INFO 11888 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+ã2020-12-18 15:58:01.481  INFO 11888 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+™2020-12-18 15:58:01.481  INFO 11888 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 0.781 seconds (JVM running for 17.65)
+[1;31m
+Start test 104[0m
+[1;31m
+Start test 105[0m
+ü2020-12-18 15:58:01.481  INFO 11888 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2020-12-18 15:58:01.481  INFO 11888 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+á2020-12-18 15:58:01.496  INFO 11888 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+ﬁCode{code='Snippet #16', id='afeb20fe-54a5-47d3-82ad-42c73adb0176', date='2020/12/18 15:57:54', time=100, views=20, isSecretTime=true, isSecretViews=true, begin=2020-12-18T15:57:54.749782, end=2020-12-18T15:59:34.749782}
+ first   } else {
+second } else {
+[1;31m
+Start test 106[0m
+false
+›Code{code='Snippet #16', id='afeb20fe-54a5-47d3-82ad-42c73adb0176', date='2020/12/18 15:57:54', time=93, views=19, isSecretTime=true, isSecretViews=true, begin=2020-12-18T15:57:54.749782, end=2020-12-18T15:59:34.749782}
+ first   } else {
+second } else {
+[1;31m
+Start test 107[0m
+‹Code{code='Snippet #18', id='207f92f4-d118-4aeb-8557-5eddc6d15e18', date='2020/12/18 15:57:54', time=0, views=5, isSecretTime=false, isSecretViews=true, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+[1;31m
+Start test 108[0m
+false
+‹Code{code='Snippet #18', id='207f92f4-d118-4aeb-8557-5eddc6d15e18', date='2020/12/18 15:57:54', time=0, views=4, isSecretTime=false, isSecretViews=true, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+[1;31m
+Start test 109[0m
+‹Code{code='Snippet #20', id='effee187-7e17-477e-9eed-86efed72fcc8', date='2020/12/18 15:57:54', time=3, views=0, isSecretTime=true, isSecretViews=false, begin=2020-12-18T15:57:54.781032, end=2020-12-18T15:57:57.781032}
+ first   } else {
+  if (seconds <= 0) {
+[1;31m
+Start test 110[0m
+[1;31m
+Start test 111[0m
+›Code{code='Snippet #22', id='9ce1a825-d4d3-4c1b-b65d-0df8eb4eee37', date='2020/12/18 15:57:54', time=30, views=0, isSecretTime=true, isSecretViews=false, begin=2020-12-18T15:57:54.796657, end=2020-12-18T15:58:24.796657}
+ first   } else {
+second } else {
+[1;31m
+Start test 112[0m
+false
+›Code{code='Snippet #22', id='9ce1a825-d4d3-4c1b-b65d-0df8eb4eee37', date='2020/12/18 15:57:54', time=23, views=0, isSecretTime=true, isSecretViews=false, begin=2020-12-18T15:57:54.796657, end=2020-12-18T15:58:24.796657}
+ first   } else {
+second } else {
+[1;31m
+Start test 113[0m
+[1;31m
+Start test 114[0m
+[1;31m
+Start test 115[0m
+‹Code{code='Snippet #18', id='207f92f4-d118-4aeb-8557-5eddc6d15e18', date='2020/12/18 15:57:54', time=0, views=3, isSecretTime=false, isSecretViews=true, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+[1;31m
+Start test 116[0m
+‹Code{code='Snippet #18', id='207f92f4-d118-4aeb-8557-5eddc6d15e18', date='2020/12/18 15:57:54', time=0, views=2, isSecretTime=false, isSecretViews=true, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+[1;31m
+Start test 117[0m
+false
+‹Code{code='Snippet #18', id='207f92f4-d118-4aeb-8557-5eddc6d15e18', date='2020/12/18 15:57:54', time=0, views=1, isSecretTime=false, isSecretViews=true, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+ if (time <= 0) {
+[1;31m
+Start test 118[0m
+‹Code{code='Snippet #18', id='207f92f4-d118-4aeb-8557-5eddc6d15e18', date='2020/12/18 15:57:54', time=0, views=0, isSecretTime=false, isSecretViews=true, begin=2020-12-18T15:57:54.765407, end=2020-12-18T15:57:54.765407}
+ if (time <= 0) {
+[1;31m
+Start test 119[0m
